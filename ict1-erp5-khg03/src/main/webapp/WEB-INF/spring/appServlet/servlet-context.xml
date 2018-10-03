@@ -38,6 +38,7 @@
 	<mvc:resources location="/WEB-INF/rsc/pages/"	mapping="/pages/**" />
 	<mvc:resources location="/WEB-INF/rsc/js/" mapping="/js/**" />
 	<mvc:resources location="/WEB-INF/rsc/img/" mapping="/img/**" />
+	<mvc:resources location="/WEB-INF/rsc/codebase/" mapping="/codebase/**" />
 	<!-- 리소스 webinf 생략 로직 -->
 
 	<!-- 출처: http://cocomo.tistory.com/198 [Cocomo Coding] -->
