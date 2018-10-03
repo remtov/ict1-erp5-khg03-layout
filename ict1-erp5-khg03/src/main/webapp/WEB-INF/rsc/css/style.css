@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+
+#epr5-container { /* #은 아이디선택자이다. */
+	width: 940px;
+	margin: 10px auto;
+	padding: 20px;
+	border: 1px solid #bcbcbc;
+}
+
+#epr5-header {
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #bcbcbc;
+}
+
+#epr5-content {
+	/* width: 580px; */
+	width: 680px;
+	padding: 20px;
+	margin-bottom: 20px;
+	float: right;
+	border: 1px solid #bcbcbc;
+}
+
+#epr5-sidebar {
+	width: 160px;
+	/* width: 260px; */
+	/* width: 20%; */
+	padding: 20px;
+	margin-bottom: 20px;
+	float: left;
+	border: 1px solid #bcbcbc;
+}
+
+#epr5-footer {
+	clear: both;
+	padding: 20px;
+	border: 1px solid #bcbcbc;
+}
+
+@media ( max-width :940px ) { /* 가로 940px이하일경우 스마트폰 레이아웃으로 변경 */
+	#epr5-container {
+		width: auto;
+	}
+	#epr5-sidebar {
+		float: none;
+		width: auto;
+	}
+	#epr5-content {
+		float: none;
+		width: auto;
+	}
+}

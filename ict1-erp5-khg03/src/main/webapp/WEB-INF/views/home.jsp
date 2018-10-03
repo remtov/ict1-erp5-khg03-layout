@@ -14,60 +14,7 @@
 <!-- 스마트폰해상도에 호환 -->
 <title>ICT1 ERP5</title>
 
-
-<style>
-#jb-container {
-	width: 940px;
-	margin: 10px auto;
-	padding: 20px;
-	border: 1px solid #bcbcbc;
-}
-
-#jb-header {
-	padding: 20px;
-	margin-bottom: 20px;
-	border: 1px solid #bcbcbc;
-}
-
-#jb-content {
-	/* width: 580px; */
-	width: 680px;
-	padding: 20px;
-	margin-bottom: 20px;
-	float: right;
-	border: 1px solid #bcbcbc;
-}
-
-#jb-sidebar {
-	width: 160px;
-	/* width: 260px; */
-	/* width: 20%; */
-	padding: 20px;
-	margin-bottom: 20px;
-	float: left;
-	border: 1px solid #bcbcbc;
-}
-
-#jb-footer {
-	clear: both;
-	padding: 20px;
-	border: 1px solid #bcbcbc;
-}
-
-@media ( max-width :940px ) {
-	#jb-container {
-		width: auto;
-	}
-	#jb-sidebar {
-		float: none;
-		width: auto;
-	}
-	#jb-content {
-		float: none;
-		width: auto;
-	}
-}
-</style>
+<link rel="stylesheet" href="/css/style.css" type="text/css">
 
 </head>
 
@@ -75,18 +22,16 @@
 <body>
 
 
-	<div id="jb-container">
-		<div id="jb-header">
+	<div id="epr5-container">
+		<div id="epr5-header">
 
-			<h1>Logo</h1>
-
-			<P>Text. The time on the server is ${serverTime}.</P>
+			<jsp:include page="/WEB-INF/views/common/header.jsp" />
 
 		</div>
 
 
 
-		<div id="jb-content">
+		<div id="epr5-content">
 			<h2>Content</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet.
@@ -97,16 +42,12 @@
 		</div>
 
 
-		<div id="jb-sidebar">
-			<h2>Sidebar</h2>
-			<ul>
-				<li>side1</li>
-				<li>side2</li>
-				<li>side3</li>
-			</ul>
+		<div id="epr5-sidebar">
+			<jsp:include page="/WEB-INF/views/common/left.jsp" />
+
 		</div>
 
-		<div id="jb-footer">
+		<div id="epr5-footer">
 
 
 			<jsp:include page="/WEB-INF/views/common/footer.jsp" />
